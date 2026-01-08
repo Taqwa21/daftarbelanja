@@ -2,86 +2,80 @@
 
 ## 📖 Deskripsi
 
-Pernah disuruh belanja, berangkat dengan penuh percaya diri, tapi begitu sampai pasar malah bengong karena lupa beli apa saja?  
-Atau ingat beli batagor, tapi lupa pesan “jangan pakai kecap”?
+Pernah disuruh belanja, sudah sampai pasar, terus lupa setengah daftar?  
+Atau lebih parah lagi: salah beliin titipan orang 😅
 
-Daftar Belanja Harian hadir sebagai solusi sederhana untuk menyelamatkan kamu dari momen malu di depan tukang jualan.  
-Aplikasi web ini membantu mencatat daftar belanja lengkap dengan jumlah dan catatan khusus, supaya belanja lebih terarah dan tidak mengandalkan ingatan semata.
+Daftar Belanja Harian adalah aplikasi web sederhana untuk mencatat kebutuhan belanja sehari-hari, lengkap dengan jumlah, harga, catatan khusus, dan siapa yang nitip.  
+Cocok dipakai sebelum berangkat, biar nggak bolak-balik nanya atau salah beli.
 
-Semua data disimpan langsung di browser, jadi meskipun tab ditutup, daftar belanja tetap aman.
+Aplikasi ini dibuat dengan konsep sederhana, ringan, dan fokus ke fungsi yang benar-benar kepakai di kehidupan sehari-hari.
 
 ## 🌐 Demo Aplikasi
 
 Aplikasi dapat diakses melalui link berikut  
-not yet baby
+https://daftarbelanja-two.vercel.app/
 
 ## ⚙️ Fitur Utama
 
-➕ Tambah Item  
-Menambahkan item belanja berupa nama, jumlah, dan catatan tambahan.
+➕ Tambah Item Belanja  
+Menambahkan item belanja dengan nama dan jumlah.
 
-📝 Catatan Detail  
-Menulis catatan khusus seperti “tanpa kecap”, “pedas sedang”, atau “jangan lupa plastik”.
+📝 Catatan Khusus  
+Menambahkan detail tambahan seperti “jangan pakai kecap”, “pilih yang kecil”, atau catatan lainnya.
 
-👁️ Lihat Daftar  
-Menampilkan seluruh item belanja dalam bentuk daftar yang rapi.
+👤 Pemilik / Penitip  
+Menandai siapa yang menitip barang agar tidak tertukar.
+
+💰 Harga (Opsional)  
+Menambahkan harga item dengan format angka bertitik agar mudah dibaca.
+
+✅ Tandai Sudah Dibeli  
+Menandai item yang sudah dibeli agar tidak terulang.
 
 ✏️ Edit Item  
-Mengubah data item belanja jika ada yang keliru.
-
-✔️ Tandai Dibeli  
-Menandai item yang sudah dibeli agar tidak beli dua kali.
+Mengubah data item belanja langsung dari daftar.
 
 ❌ Hapus Item  
 Menghapus item yang sudah tidak diperlukan.
 
-🔍 Filter Item  
-Menampilkan item berdasarkan status semua, belum dibeli, atau sudah dibeli.
+🔍 Filter Data  
+Menampilkan semua item, item yang belum dibeli, atau item yang sudah dibeli.
 
-💾 Simpan Otomatis  
-Data tersimpan otomatis tanpa database dan tanpa drama.
+💾 Penyimpanan Otomatis  
+Data tersimpan otomatis menggunakan localStorage, tetap aman meskipun halaman direfresh.
 
 ## 🧰 Teknologi yang Digunakan
 
-🌐 HTML  
-Digunakan untuk membangun struktur halaman aplikasi.
+HTML  
+Digunakan untuk struktur halaman dan elemen input aplikasi.
 
-🎨 CSS  
-Digunakan untuk mengatur tampilan agar sederhana dan nyaman dipakai.
+CSS  
+Digunakan untuk styling tampilan modern dengan konsep card, badge, dan layout yang nyaman dilihat.
 
-⚙️ JavaScript  
-Digunakan untuk mengatur logika aplikasi, manipulasi DOM, dan penyimpanan data menggunakan localStorage.
+JavaScript  
+Digunakan untuk mengelola logika aplikasi, manipulasi DOM, filter data, dan penyimpanan localStorage.
 
 ## 📌 Proses Pengembangan
 
-🔹 Step 1 – Ide muncul  
-Berawal dari kebiasaan lupa belanja apa saja, lalu terpikir membuat aplikasi yang tidak mudah lupa.
+Step 1  
+Menentukan ide aplikasi belanja harian yang realistis dan sering digunakan.
 
-🔹 Step 2 – Struktur HTML  
-Menyusun form input dan daftar belanja sebagai kerangka aplikasi.
+Step 2  
+Menyusun struktur HTML untuk form input dan daftar belanja.
 
-🔹 Step 3 – Styling tampilan  
-Merapikan tampilan agar enak dilihat dan mudah digunakan.
+Step 3  
+Membuat styling modern menggunakan CSS agar tampilan tidak kaku dan nyaman digunakan.
 
-🔹 Step 4 – Logika JavaScript  
-Menerapkan fitur tambah, edit, hapus, tandai dibeli, dan filter item.
+Step 4  
+Mengimplementasikan logika JavaScript untuk tambah, edit, hapus, dan filter item belanja.
 
-🔹 Step 5 – Penyimpanan data  
-Menggunakan localStorage supaya data tetap ada walau halaman ditutup.
+Step 5  
+Menambahkan penyimpanan data menggunakan localStorage agar data tidak hilang.
 
-🔹 Step 6 – Penyempurnaan  
-Merapikan kode dan memastikan aplikasi berjalan dengan baik.
-
-## 🧭 Alur Aplikasi
-
-1. Pengguna mengisi nama item, jumlah, dan catatan
-2. Data tersimpan otomatis
-3. Daftar belanja tampil di layar
-4. Item dapat ditandai, diedit, atau dihapus
+Step 6  
+Penyempurnaan tampilan dan pengalaman pengguna berdasarkan penggunaan langsung.
 
 ## 💡 Catatan
 
-Aplikasi ini dibuat untuk tujuan pembelajaran sekaligus membantu aktivitas belanja sehari-hari agar tidak ada lagi cerita lupa beli barang.
-
-Dibuat oleh  
-Taqwa Amni Ramadhan
+Proyek ini dibuat sebagai latihan dan pembelajaran pengembangan web dasar dengan studi kasus yang dekat dengan kehidupan sehari-hari.  
+Fokus utama adalah fungsionalitas, keterbacaan kode, dan pengalaman pengguna yang sederhana namun efektif.
