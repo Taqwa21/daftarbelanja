@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+p {
+  margin-top: 0;
+  color: #475569;
+}
+
+/* FORM */
+.form-belanja {
+  display: grid;
+  gap: 10px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.form-belanja input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+}
+
+.form-belanja input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+#btnTambah {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#btnTambah:hover {
+  background: #4f46e5;
+}
+
+/* FILTER */
+.filter-belanja {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter-belanja button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 999px;
+  border: 1px solid #c7d2fe;
+  background: #eef2ff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.filter-belanja button:hover {
+  background: #e0e7ff;
+}
+
+/* INFO */
+.info-belanja {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+/* LIST */
+.list-belanja ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.item.selesai {
+  opacity: 0.6;
+}
+
+/* HEADER */
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-header label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.item-nama {
+  font-weight: 600;
+}
+
+.item-jumlah {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* META */
+.item-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+.badge.pemilik {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge.harga {
+  background: #e0e7ff;
+  color: #1e3a8a;
+}
+
+/* NOTE */
+.item-note {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border-left: 4px solid #6366f1;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #334155;
+}
+
+/* ACTION */
+.item-aksi {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.item-aksi button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.item-aksi .edit {
+  background: #fde68a;
+  color: #92400e;
+}
+
+.item-aksi .edit:hover {
+  background: #fcd34d;
+}
+
+.item-aksi .hapus {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.item-aksi .hapus:hover {
+  background: #fecaca;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .item-aksi {
+    justify-content: space-between;
+  }
+}

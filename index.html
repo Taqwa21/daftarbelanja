@@ -1,1 +1,65 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Daftar Belanja Harian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Daftar Belanja Harian</h1>
+      <p>Catat dulu sebelum berangkat, biar gak salah beliin punya orang</p>
+
+      <!-- Form Input -->
+      <section class="form-belanja">
+        <input type="text" id="namaItem" placeholder="Nama item belanja" />
+
+        <input type="number" id="jumlahItem" placeholder="Jumlah" min="1" />
+
+        <input
+          type="text"
+          id="pemilikItem"
+          placeholder="Pemilik / penitip (opsional)"
+        />
+
+        <input
+          type="number"
+          id="hargaItem"
+          placeholder="Harga (opsional)"
+          min="0"
+        />
+
+        <input
+          type="text"
+          id="catatanItem"
+          placeholder="Catatan (contoh: jangan pakai kecap)"
+        />
+
+        <button id="btnTambah">Tambah Item</button>
+      </section>
+
+      <!-- Filter -->
+      <section class="filter-belanja">
+        <button data-filter="all">Semua</button>
+        <button data-filter="belum">Belum Dibeli</button>
+        <button data-filter="sudah">Sudah Dibeli</button>
+      </section>
+
+      <!-- Info -->
+      <section class="info-belanja">
+        <span id="totalItem">Total item: 0</span>
+        <span id="totalJumlah">Total jumlah: 0</span>
+      </section>
+
+      <!-- List Belanja -->
+      <section class="list-belanja">
+        <ul id="daftarBelanja">
+          <!-- Item belanja akan dirender lewat JavaScript -->
+        </ul>
+      </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
